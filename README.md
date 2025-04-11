@@ -94,7 +94,7 @@ All features are available from the homepage and are clickable, taking users to 
 ---
 
 ## 🌐 Live Demo  
-👉 [Click to Explore Finverse – Future Finder](https://preview--finverse-future-finder.lovable.app/#features)
+👉 [Click to Explore Finverse – Future Finder](https://finverse-future-finder.vercel.app/)
 
 ---
 
