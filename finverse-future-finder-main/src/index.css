@@ -1,0 +1,131 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 212 28% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 212 28% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 212 28% 5%;
+
+    --primary: 201 100% 17%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 212 28% 5%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 201 100% 17%;
+    --muted-foreground: 0 0% 100%;
+
+    --accent: 197 100% 84%;
+    --accent-foreground: 212 28% 5%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 197 100% 84%;
+    --input: 197 100% 84%;
+    --ring: 197 100% 84%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 212 28% 5%;
+    --foreground: 0 0% 100%;
+
+    --card: 201 100% 17%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 201 100% 17%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 201 100% 17%;
+
+    --secondary: 197 100% 84%;
+    --secondary-foreground: 212 28% 5%;
+
+    --muted: 201 100% 17%;
+    --muted-foreground: 0 0% 100%;
+
+    --accent: 197 100% 84%;
+    --accent-foreground: 212 28% 5%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 201 100% 17%;
+    --input: 201 100% 17%;
+    --ring: 197 100% 84%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-xl;
+  }
+  
+  .dark .glass {
+    @apply bg-finverse-black/30 backdrop-blur-md border border-finverse-blue/20;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  .feature-card {
+    @apply bg-white border border-finverse-accent p-6 rounded-xl shadow-sm hover:border-finverse-blue hover:shadow-md transition-all duration-300 hover:scale-[1.02] h-full flex flex-col;
+  }
+  
+  .dark .feature-card {
+    @apply bg-finverse-blue/20 border-finverse-accent/50 hover:border-finverse-accent;
+  }
+  
+  .nav-link {
+    @apply relative cursor-pointer px-4 py-2 text-finverse-white hover:text-finverse-accent transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-finverse-accent after:transition-all after:duration-300 hover:after:w-full;
+  }
+  
+  .btn-primary {
+    @apply bg-finverse-blue text-white px-6 py-2 rounded-md hover:bg-finverse-accent hover:text-finverse-black transition-colors duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-finverse-accent text-finverse-black px-6 py-2 rounded-md hover:bg-finverse-blue hover:text-white transition-colors duration-300;
+  }
+  
+  .btn-outline {
+    @apply border border-finverse-blue text-finverse-blue px-6 py-2 rounded-md hover:bg-finverse-blue hover:text-white transition-colors duration-300;
+  }
+  
+  .dark .btn-outline {
+    @apply border-finverse-accent text-finverse-accent hover:bg-finverse-accent hover:text-finverse-black;
+  }
+}
+
+@keyframes grow {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+.animate-grow {
+  animation: grow 2s ease-out forwards;
+}
