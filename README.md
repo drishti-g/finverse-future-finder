@@ -91,12 +91,14 @@ All features are available from the homepage and are clickable, taking users to 
 - Compare your inputs with average stats from similar users.
 - Displays: “You save more than 65% of Gen-Z users in Metro cities.”
 
----
 
 ## 🌐 Live Demo  
 👉 [Click to Explore Finverse – Future Finder](https://finverse-future-finder.vercel.app/)
 
----
+## 🎥 Demo Video
+
+Watch the full walkthrough here: [Video](https://drive.google.com/file/d/1N9X_5XQOzsE_zt1h120qLfP_jk5LJrVM/view)
+
 
 ## ⚙️ Setup Instructions
 

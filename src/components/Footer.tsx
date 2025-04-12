@@ -78,7 +78,7 @@ const Footer = () => {
           {/* Contact & Social Links */}
           <div>
             <h3 className="text-xl font-bold mb-6">Get in Touch</h3>
-            <p className="mb-4">Reach us at: contact@finverse.example.com</p>
+            <p className="mb-4">Reach us at: drish0098@gmail.com</p>
             
             <div className="flex space-x-4 mb-8">
               <a 
